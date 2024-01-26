@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Sceness/WaitingScreen.unity
+    guid: 601a77a6deb490d4bbd15797abd520d0
+  - enabled: 1
+    path: Assets/Sceness/SingingBlow.unity
+    guid: 67f448cacf33ddb4f918aa6cf4bd0ba7
+  - enabled: 1
+    path: Assets/Sceness/MayDanhChu.unity
+    guid: 192ce75c62102d141976e24fd14e2b60
+  - enabled: 1
+    path: Assets/Sceness/FidgetCube.unity
+    guid: 47fc97e963632264d8ed1821c3278ff2
+  - enabled: 1
+    path: Assets/Sceness/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects: {}
