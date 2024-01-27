@@ -15,10 +15,11 @@ public class Aste : MonoBehaviour
     }
     private void Start()
     {
-        LoadComponent();
+        
     }
     public void LoadComponent()
     {
+        if (_AstesHolder) return;
         _AstesHolder = GameObject.Find("Aste");
         _Astes = new GameObject[_AstesHolder.transform.childCount];
        // _LstAstes = new List<GameObject>();

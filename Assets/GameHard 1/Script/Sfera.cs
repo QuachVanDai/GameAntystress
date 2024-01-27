@@ -21,7 +21,6 @@ public class Sfera : MonoBehaviour
     }
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {

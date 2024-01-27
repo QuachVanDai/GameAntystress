@@ -14,7 +14,6 @@ public class Breathe : MonoBehaviour
     }
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {

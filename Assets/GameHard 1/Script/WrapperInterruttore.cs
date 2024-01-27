@@ -22,7 +22,6 @@ public class WrapperInterruttore : MonoBehaviour
 
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {
@@ -42,7 +41,7 @@ public class WrapperInterruttore : MonoBehaviour
         {
             return;
         }
-        _WrapperInterruttore.transform.DOLocalRotate(new Vector3(0,0, _Angle),0.1f).OnComplete(()=>
+        _WrapperInterruttore.transform.DOLocalRotate(new Vector3(0,0, _Angle),0.1f).SetEase(Ease.OutBack).OnComplete(()=>
         {
             _SoundManage.PlaySound(_SoundWrapperInterruttoreClip);
 

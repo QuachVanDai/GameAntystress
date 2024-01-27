@@ -18,7 +18,6 @@ public class Joystick : MonoBehaviour
 
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {

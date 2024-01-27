@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-public class FoglioDavantiMove : Foglio
+public class FoglioDavantiMove : MonoBehaviour
 {
     private static FoglioDavantiMove _instance;
     [SerializeField] private GameObject _Scritta;
@@ -10,6 +10,8 @@ public class FoglioDavantiMove : Foglio
     [SerializeField] private GameObject _PosizioneFoglioDavantiInserito; // vi tri thay doi khi danh chu
     [SerializeField] private GameObject _PosizioneFoglioDavantiNascosto; // vi tri an sau khi
     [SerializeField] private Vector3 _PosizioneFoglioDavantiShow; // vi tri an sau khi
+
+    public int LineCount = 1;
 
     #region phần khởi tạo
     private void Awake()
@@ -23,11 +25,14 @@ public class FoglioDavantiMove : Foglio
     }
     private void Start()
     {
-        LoadComponent();
+        LoadStart();
+    }
+    public void LoadStart()
+    {
+        this.LineCount = 1;
     }
     public void LoadComponent()
     {
-        this.LineCount = 1;
         _Scritta = GameObject.Find("Scritta");
         if (_Scritta == null) { Debug.LogWarning("Scritta "+ TagTemplate.NotFindObject); return; }
         _Scritta.transform.SetParent(this.transform);
@@ -42,14 +47,12 @@ public class FoglioDavantiMove : Foglio
         if (_PosizioneFoglioDavantiNascosto == null) { Debug.LogWarning("PosizioneFoglioDavantiNascosto "+ TagTemplate.NotFindObject); return; }
     }
     #endregion
-    public override void FoglioMove()
+    public  void FoglioMove()
     {
-
         this.transform.DOMoveY(_PosizioneFoglioDavantiInserito.transform.position.y + (0.222f * this.LineCount++), 0.5f);
     }
-    public override void FoglioShow()
+    public  void FoglioShow()
     {
-        base.FoglioShow();
         transform.DOMove(_PosizioneFoglioDavantiSu.transform.position, 0.5f)
        .OnComplete(() =>
        {
@@ -60,9 +63,8 @@ public class FoglioDavantiMove : Foglio
        });
     }
 
-    public override void CreateNewFoglio() 
+    public void CreateNewFoglio() 
     {
-        base.CreateNewFoglio();
         transform.DOMove(_PosizioneFoglioDavantiSu.transform.position, 0.5f)
      .OnComplete(() =>
       {

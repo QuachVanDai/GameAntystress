@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: null
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &130176686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: ','
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &200878444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 8
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &206927931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: g
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &294199777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: i
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &302273605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 3
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &604032161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: s
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &621438707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: c
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &627054020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: l
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &639765439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 5
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &700352253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: h
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &779247104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: k
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &801902593
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,12 +350,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272d7e378ab164f46837fb2ab4704c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountY: 1
   _Scritta: {fileID: 2048257458}
   _PosizioneFoglioDavantiSu: {fileID: 2966191557111805567}
   _PosizioneFoglioDavantiInserito: {fileID: 2966191557111805511}
   _PosizioneFoglioDavantiNascosto: {fileID: 2966191557111805551}
   _PosizioneFoglioDavantiShow: {x: 0, y: 0, z: 0}
+  LineCount: 1
 --- !u!23 &801902596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -395,6 +419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: y
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &809064257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: w
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &812135386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: z
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &812361199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: d
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &869177085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,6 +479,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: o
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &882500116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: m
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &938707400
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +741,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: q
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &1038345631
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +827,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!1 &1107012811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107012815}
+  - component: {fileID: 1107012814}
+  - component: {fileID: 1107012813}
+  - component: {fileID: 1107012812}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1107012812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107012811}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1107012813
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107012811}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1107012814
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107012811}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1107012815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107012811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5, y: 0.75000006, z: 3.573}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1241032157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,6 +945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: u
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &1251496831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,6 +960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 1
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &1293121597
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,6 +1090,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: v
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &1321812747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 6
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &1480169667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,6 +1282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: j
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &1498199535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 0
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &1583809539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: p
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &1606470409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,6 +1548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 4
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &1738568474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: e
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &1895883789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,6 +1706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 7
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2035560370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,6 +1721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: a
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!1 &2048257458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1848,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: ' '
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2085732537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,6 +1863,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 2
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
+--- !u!65 &2109286287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966191557111805546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!33 &78106579539583469
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1959,7 +2149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _TextMesh: {fileID: 2006563800115913061}
-  _Aste: {fileID: 0}
+  _Aste: {fileID: 2966191557128535074}
 --- !u!135 &2966191551172580896
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1980,7 +2170,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580897
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2001,7 +2191,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580898
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2022,7 +2212,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580899
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2043,7 +2233,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580900
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2064,7 +2254,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580901
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2085,7 +2275,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580902
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2106,7 +2296,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580903
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2127,7 +2317,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580904
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2148,7 +2338,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580905
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2169,7 +2359,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580907
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2190,7 +2380,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580908
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2211,7 +2401,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580909
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2232,7 +2422,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580910
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2253,7 +2443,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580911
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2274,7 +2464,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580928
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2295,7 +2485,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580929
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2337,7 +2527,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580931
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2358,7 +2548,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580936
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2379,7 +2569,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580937
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2400,7 +2590,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580938
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2421,7 +2611,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580939
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2442,7 +2632,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580940
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2463,7 +2653,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580941
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2484,7 +2674,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580942
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2505,7 +2695,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580943
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2526,7 +2716,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580944
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2547,7 +2737,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580945
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2568,7 +2758,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580946
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2589,7 +2779,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580947
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2610,7 +2800,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580948
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2631,7 +2821,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.17
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580949
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2673,7 +2863,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580951
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2694,7 +2884,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580952
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2715,7 +2905,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580953
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2736,7 +2926,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.334, z: -1.7}
 --- !u!135 &2966191551172580954
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2757,7 +2947,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580955
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2778,7 +2968,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.226, z: -2.074}
+  m_Center: {x: 0, y: 0.226, z: -2.04}
 --- !u!135 &2966191551172580956
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2799,7 +2989,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.612, z: -0.929}
+  m_Center: {x: 0, y: 0.6, z: -0.88}
 --- !u!135 &2966191551172580957
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2820,7 +3010,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580958
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2841,7 +3031,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.493, z: -1.313}
+  m_Center: {x: 0, y: 0.5, z: -1.27}
 --- !u!135 &2966191551172580959
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2862,7 +3052,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.15
-  m_Center: {x: 0, y: 0.334, z: -1.728}
+  m_Center: {x: 0, y: 0.33, z: -1.7}
 --- !u!1 &2966191557111786660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,7 +3528,7 @@ GameObject:
   - component: {fileID: 604032161}
   m_Layer: 25
   m_Name: Tasto (1)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3657,7 +3847,7 @@ GameObject:
   - component: {fileID: 2966191558185454560}
   m_Layer: 25
   m_Name: Tasto (5)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3936,7 +4126,7 @@ GameObject:
   - component: {fileID: 627054020}
   m_Layer: 25
   m_Name: Tasto (8)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4037,7 +4227,7 @@ GameObject:
   - component: {fileID: 1241032157}
   m_Layer: 25
   m_Name: Tasto (6)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4092,7 +4282,7 @@ GameObject:
   - component: {fileID: 2966191558185454562}
   m_Layer: 25
   m_Name: Tasto (8)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4129,7 +4319,7 @@ GameObject:
   - component: {fileID: 802809853}
   m_Layer: 25
   m_Name: Tasto (5)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4180,7 +4370,7 @@ GameObject:
   - component: {fileID: 639765439}
   m_Layer: 25
   m_Name: Tasto (4)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4561,7 +4751,7 @@ GameObject:
   - component: {fileID: 2966191558185454561}
   m_Layer: 25
   m_Name: Tasto (4)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4644,7 +4834,7 @@ GameObject:
   - component: {fileID: 812361199}
   m_Layer: 25
   m_Name: Tasto (2)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4975,7 +5165,7 @@ GameObject:
   - component: {fileID: 1550132408}
   m_Layer: 25
   m_Name: Tasto (9)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5010,7 +5200,7 @@ GameObject:
   - component: {fileID: 812135386}
   m_Layer: 25
   m_Name: Tasto
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5097,7 +5287,7 @@ GameObject:
   - component: {fileID: 200878444}
   m_Layer: 25
   m_Name: Tasto (7)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5115,7 +5305,7 @@ GameObject:
   - component: {fileID: 2966191557648642713}
   m_Layer: 0
   m_Name: Mesh
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6002,7 +6192,7 @@ GameObject:
   - component: {fileID: 1751643525}
   m_Layer: 25
   m_Name: Tasto (2)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6053,7 +6243,7 @@ GameObject:
   - component: {fileID: 2085732537}
   m_Layer: 25
   m_Name: Tasto (1)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6138,7 +6328,7 @@ GameObject:
   - component: {fileID: 2966191558185454554}
   m_Layer: 25
   m_Name: Tasto (1)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6273,7 +6463,7 @@ GameObject:
   - component: {fileID: 1480169667}
   m_Layer: 25
   m_Name: Tasto (6)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6292,7 +6482,7 @@ GameObject:
   - component: {fileID: 869177085}
   m_Layer: 25
   m_Name: Tasto (8)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6345,7 +6535,7 @@ GameObject:
   - component: {fileID: 2035560370}
   m_Layer: 25
   m_Name: Tasto
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6398,7 +6588,7 @@ GameObject:
   - component: {fileID: 130176686}
   m_Layer: 25
   m_Name: Tasto (7)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6499,7 +6689,7 @@ GameObject:
   - component: {fileID: 1691542622}
   m_Layer: 25
   m_Name: Tasto (3)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6768,7 +6958,7 @@ GameObject:
   - component: {fileID: 621438707}
   m_Layer: 25
   m_Name: Tasto (2)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6939,7 +7129,7 @@ GameObject:
   - component: {fileID: 1311286846}
   m_Layer: 25
   m_Name: Tasto (3)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7024,7 +7214,7 @@ GameObject:
   - component: {fileID: 930368814}
   m_Layer: 25
   m_Name: Tasto (6)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7043,7 +7233,7 @@ GameObject:
   - component: {fileID: 700352253}
   m_Layer: 25
   m_Name: Tasto (5)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7080,7 +7270,7 @@ GameObject:
   - component: {fileID: 1583809539}
   m_Layer: 25
   m_Name: Tasto (9)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7215,7 +7405,7 @@ GameObject:
   - component: {fileID: 1402447249}
   m_Layer: 25
   m_Name: Tasto (5)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7300,7 +7490,7 @@ GameObject:
   - component: {fileID: 1021565654}
   m_Layer: 25
   m_Name: Tasto
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7351,7 +7541,7 @@ GameObject:
   - component: {fileID: 206927931}
   m_Layer: 25
   m_Name: Tasto (4)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7520,7 +7710,7 @@ GameObject:
   - component: {fileID: 302273605}
   m_Layer: 25
   m_Name: Tasto (2)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7539,7 +7729,7 @@ GameObject:
   - component: {fileID: 88981640}
   m_Layer: 25
   m_Name: Tasto (10)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7558,7 +7748,7 @@ GameObject:
   - component: {fileID: 2061527206}
   m_Layer: 25
   m_Name: Spazio
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7609,7 +7799,7 @@ GameObject:
   - component: {fileID: 294199777}
   m_Layer: 25
   m_Name: Tasto (7)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7888,7 +8078,7 @@ GameObject:
   - component: {fileID: 2966191558185454595}
   m_Layer: 25
   m_Name: Tasto (10)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7957,7 +8147,7 @@ GameObject:
   - component: {fileID: 2966191558185454593}
   m_Layer: 25
   m_Name: Tasto (8)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8026,7 +8216,7 @@ GameObject:
   - component: {fileID: 809064257}
   m_Layer: 25
   m_Name: Tasto (1)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8147,7 +8337,7 @@ GameObject:
   - component: {fileID: 2966191558185454592}
   m_Layer: 25
   m_Name: Tasto (9)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8166,7 +8356,7 @@ GameObject:
   - component: {fileID: 779247104}
   m_Layer: 25
   m_Name: Tasto (7)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8651,7 +8841,7 @@ GameObject:
   - component: {fileID: 2966191558185454582}
   m_Layer: 25
   m_Name: Tasto (4)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8670,7 +8860,7 @@ GameObject:
   - component: {fileID: 2966191558185454581}
   m_Layer: 25
   m_Name: Tasto (3)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8689,7 +8879,7 @@ GameObject:
   - component: {fileID: 1895883789}
   m_Layer: 25
   m_Name: Tasto (6)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8758,7 +8948,7 @@ GameObject:
   - component: {fileID: 2966191558185454594}
   m_Layer: 25
   m_Name: Tasto (3)
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9057,9 +9247,10 @@ GameObject:
   - component: {fileID: 2966191551172580928}
   - component: {fileID: 2966191558185454583}
   - component: {fileID: 1251496831}
+  - component: {fileID: 2109286287}
   m_Layer: 25
   m_Name: Tasto
-  m_TagString: 
+  m_TagString: Tasto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9934,56 +10125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac620696dbf9b1c4aa2bd571e62c2c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _FilaSopra:
-  - {fileID: 2966191557111805546}
-  - {fileID: 2966191557111805301}
-  - {fileID: 2966191557111805387}
-  - {fileID: 2966191557111805327}
-  - {fileID: 2966191557111805189}
-  - {fileID: 2966191557111805369}
-  - {fileID: 2966191557111805464}
-  - {fileID: 2966191557111805244}
-  - {fileID: 2966191557111805184}
-  - {fileID: 2966191557111805237}
-  - {fileID: 2966191557111805409}
-  _FilaQWERTY:
-  - {fileID: 2966191557111805374}
-  - {fileID: 2966191557111805417}
-  - {fileID: 2966191557111805298}
-  - {fileID: 2966191557111805468}
-  - {fileID: 2966191557111805462}
-  - {fileID: 2966191557111805186}
-  - {fileID: 2966191557111805181}
-  - {fileID: 2966191557111805392}
-  - {fileID: 2966191557111805315}
-  - {fileID: 2966191557111805361}
-  _FilaASD:
-  - {fileID: 2966191557111805318}
-  - {fileID: 2966191557111805123}
-  - {fileID: 2966191557111805217}
-  - {fileID: 2966191557111805463}
-  - {fileID: 2966191557111805377}
-  - {fileID: 2966191557111805359}
-  - {fileID: 2966191557111805314}
-  - {fileID: 2966191557111805425}
-  - {fileID: 2966191557111805175}
-  _FilaZXC:
-  - {fileID: 2966191557111805239}
-  - {fileID: 2966191557111805306}
-  - {fileID: 2966191557111805343}
-  - {fileID: 2966191557111805353}
-  - {fileID: 2966191557111805212}
-  - {fileID: 2966191557111805158}
-  - {fileID: 2966191557111805358}
-  - {fileID: 2966191557111805321}
-  - {fileID: 2966191557111805413}
-  - {fileID: 2966191557111805424}
-  - {fileID: 2966191557111805388}
-  _SopraHolder: {fileID: 2966191557111805505}
-  _QWERTYHolder: {fileID: 2966191557111805547}
-  _ASDHolder: {fileID: 2966191557111805560}
-  _ZXCHolder: {fileID: 2966191557111805510}
-  _spazio: {fileID: 2966191557111805389}
+  _Tasto: {fileID: 0}
+  _Distance: 0
 --- !u!4 &2966191557128535128
 Transform:
   m_ObjectHideFlags: 0
@@ -20688,7 +20831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab5f433843329246a5d25419eda4c94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountY: 1
+  LineCount: 1
   _PosizioneFoglioDietroSu: {fileID: 2966191557111805512}
   _PosizioneFoglioDietroInserito: {fileID: 2966191557111805561}
   _PosizioneFoglioDietroNascosto: {fileID: 2966191557111805557}
@@ -20788,12 +20931,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272d7e378ab164f46837fb2ab4704c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountY: 1
   _Scritta: {fileID: 2006563801776807459}
   _PosizioneFoglioDavantiSu: {fileID: 2966191557111805567}
   _PosizioneFoglioDavantiInserito: {fileID: 2966191557111805511}
   _PosizioneFoglioDavantiNascosto: {fileID: 2966191557111805551}
   _PosizioneFoglioDavantiShow: {x: 0, y: 0, z: 0}
+  LineCount: 1
 --- !u!23 &2966191557883517547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21086,7 +21229,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.7, y: 0.1, z: 0.4}
+  m_Size: {x: 2.6, y: 0.001, z: 0.4}
   m_Center: {x: 0, y: 0.226, z: -2.359}
 --- !u!65 &2966191558185454534
 BoxCollider:
@@ -21521,6 +21664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: x
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!65 &2966191558185454555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21639,6 +21784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: n
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558185454561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21652,6 +21799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: b
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558185454562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21665,6 +21814,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: 9
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!65 &2966191558185454578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21741,6 +21892,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: f
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558185454582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21754,6 +21907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: t
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!65 &2966191558185454583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21956,6 +22111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: null
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558185454593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21969,6 +22126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: .
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558185454594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21982,6 +22141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: r
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558185454595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21995,6 +22156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Word: '*'
+  PosStartTasto: {x: 0, y: 0, z: 0}
+  PosEndTasto: {x: 0, y: 0, z: 0}
 --- !u!114 &2966191558370066176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23191,3 +23354,4 @@ SceneRoots:
   - {fileID: 1738568477}
   - {fileID: 4386935356305046950}
   - {fileID: 1293121602}
+  - {fileID: 1107012815}

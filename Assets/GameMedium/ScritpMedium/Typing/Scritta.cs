@@ -21,18 +21,23 @@ public class Scritta : MonoBehaviour
     }
     void Start()
     {
-        LoadComponent();
+        LoadStart();
     }
     private void Reset()
     {
         LoadComponent();
     }
-    public void LoadComponent()
+    private void LoadStart()
     {
-        _TextMesh = GetComponent<TextMesh>();
-        _Aste = FindObjectOfType<Aste>();
         _TextMesh.text = "";
         _IsCanSetTextMesh = true;
+    }
+    public void LoadComponent()
+    {
+        if (_TextMesh) return;
+        _TextMesh = GetComponent<TextMesh>();
+        if (_Aste) return;
+        _Aste = FindObjectOfType<Aste>();
     }
     #endregion
  
@@ -58,11 +63,11 @@ public class Scritta : MonoBehaviour
              if (WordCountOneLine+1 == 16)
             {
                 _IsCanSetTextMesh = false;
-                StartCoroutine(nameof(waitTimeCompleteDownLine));
+                StartCoroutine(nameof(WaitTimeCompleteDownLine));
             }
         }
     }
-    public IEnumerator waitTimeCompleteDownLine()
+    public IEnumerator WaitTimeCompleteDownLine()
     {
         StartGame.Instance.IsPlayGame = false;
         yield return new WaitForSeconds(1);

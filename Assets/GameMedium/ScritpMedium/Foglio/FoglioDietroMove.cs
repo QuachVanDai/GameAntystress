@@ -1,9 +1,9 @@
 ﻿using DG.Tweening;
 using UnityEngine;
-public class FoglioDietroMove : Foglio
+public class FoglioDietroMove : MonoBehaviour
 {
     private static FoglioDietroMove _Instance;
-
+    public int LineCount = 1;
     public static FoglioDietroMove Instance { get { return _Instance; } }
     [SerializeField] private GameObject _PosizioneFoglioDietroSu;  // vi tri xuất hiện từ trên 
     [SerializeField] private GameObject _PosizioneFoglioDietroInserito; // vi tri thay doi khi danh chu
@@ -21,12 +21,14 @@ public class FoglioDietroMove : Foglio
     }
     private void Start()
     {
-        LoadComponent();
+        LoadStart();
+    }
+    public void LoadStart()
+    {
+        this.LineCount = 1;
     }
     public void LoadComponent()
     {
-        this.LineCount= 1;
-
         _PosizioneFoglioDietroSu = GameObject.Find("PosizioneFoglioDietroSu");
         if (_PosizioneFoglioDietroSu == null) { Debug.LogWarning("PosizioneFoglioDietroSu "+ TagTemplate.NotFindObject); return; }
 
@@ -37,24 +39,22 @@ public class FoglioDietroMove : Foglio
         if (_PosizioneFoglioDietroNascosto == null) { Debug.LogWarning("PosizioneFoglioDietroNascosto " + TagTemplate.NotFindObject); return; }
     }
     #endregion
-    public override void FoglioMove()
+    public  void FoglioMove()
     {
   
         this.transform.DOMoveY(_PosizioneFoglioDietroInserito.transform.position.y - (0.222f * this.LineCount++), 0.5f);
 
     }
-    public override void FoglioShow()
+    public  void FoglioShow()
     {
-        base.FoglioShow();
         transform.DOMove(_PosizioneFoglioDietroNascosto.transform.position, 0.5f)
        .OnComplete(() =>
        {
            transform.position = _PosizioneFoglioDietroSu.transform.position;
        });
     }
-    public override void CreateNewFoglio()
+    public  void CreateNewFoglio()
     {
-        base.CreateNewFoglio();
         transform.DOMove(_PosizioneFoglioDietroInserito.transform.position, 1f).SetDelay(0.5f);
     }
 }

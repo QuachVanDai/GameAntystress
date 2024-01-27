@@ -18,14 +18,12 @@ public class Girello : MonoBehaviour
     }
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {
         _Girello = GameObject.Find("Girello");
         _SoundManage = FindObjectOfType<SoundManage>();
         _IsPlaySound = true;
-
     }
     #endregion
     private void OnMouseDown()

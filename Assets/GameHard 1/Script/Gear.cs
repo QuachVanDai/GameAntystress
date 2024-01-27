@@ -20,7 +20,6 @@ public class Gear : MonoBehaviour
     }
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {
@@ -30,10 +29,8 @@ public class Gear : MonoBehaviour
     #endregion
     private void OnMouseDrag()
     {
-        // Kiểm tra nếu nút chuột trái đang được giữ
         if (Input.GetMouseButton(0))
         {
-            // Lấy giá trị di chuyển chuột theo trục X và Y
             float mouseX = Input.GetAxis("Mouse X");
             if (mouseX!=0 && _IsPlaySound)
             {
@@ -45,7 +42,6 @@ public class Gear : MonoBehaviour
                 _IsPlaySound=true;
                 _SoundManage.StopSound();
             }
-            // Xoay đối tượng dựa trên giá trị di chuyển chuột
             _Gear.transform.Rotate(Vector3.up, mouseX * RotationSpeed);
         }
     }

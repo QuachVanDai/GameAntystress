@@ -14,7 +14,6 @@ public class Bottone : MonoBehaviour
     }
     private void Start()
     {
-        LoadComponent();
     }
     private void LoadComponent()
     {
@@ -28,8 +27,14 @@ public class Bottone : MonoBehaviour
         _SoundManage.PlaySound(_SoundBottoneClip);
         transform.DOLocalMove(new Vector3(0.81f, _PosSwitchDown.localPosition.y, _PosSwitchDown.localPosition.z), 0.1f).OnComplete(() =>
         {
+            _SoundManage.StopSound();
             transform.DOLocalMove(new Vector3(0.96f, _PosSwitchDown.localPosition.y, _PosSwitchDown.localPosition.z), 0.1f);
+            
         });
+    }
+    private void OnMouseExit()
+    {
+        _SoundManage.StopSound();
     }
     private void OnMouseUp()
     {

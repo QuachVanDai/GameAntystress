@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
+
 using UnityEngine;
 
 public class CubeRotation : MonoBehaviour
@@ -19,14 +17,11 @@ public class CubeRotation : MonoBehaviour
         if (_instance != null) { Debug.LogWarning("Chi ton tai 1 CubeRotation "); return; }
         CubeRotation._instance = this;
     }
-    void Start()
-    {
-        LoadComponent();
-    }
-    private void LoadComponent()
+    private void Reset()
     {
         _IsCubeRotation = true;
     }
+  
     private void  Update()
     {
         if(!_IsCubeRotation) { return; }

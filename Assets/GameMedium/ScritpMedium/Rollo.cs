@@ -25,7 +25,13 @@ public class Rollo : MonoBehaviour
     }
     private void Reset()
     {
-        LoadComponent();
+        LoadStart();
+    }
+    public void LoadStart()
+    {
+        Scritta.Instance.WordCountOneLine = 0;
+        _Angle = 20;
+        _GetTimePreviousMouseDown = 0;
     }
     public void LoadComponent()
     {
@@ -39,9 +45,7 @@ public class Rollo : MonoBehaviour
 
         _Typewriter_Rullo = GameObject.Find("Typewriter_Rullo");
         if (!_Typewriter_Rullo) { Debug.LogWarning("Rullo" + TagTemplate.NotFindObject); }
-        Scritta.Instance.WordCountOneLine = 0;
-        _Angle = 20;
-        _GetTimePreviousMouseDown = 0;
+   
     }
     #endregion
 

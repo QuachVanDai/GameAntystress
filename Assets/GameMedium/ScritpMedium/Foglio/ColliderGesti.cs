@@ -8,7 +8,7 @@ public class ColliderGesti : MonoBehaviour
     [SerializeField] private BoxCollider _BoxColliderGesti;
     [SerializeField] private bool _IsShowOrNewText=true;
 
-    private float _GetTime;
+    private float _GetTimePreviousMouseDown;
     #region phần khơi tạo
     private void Reset()
     {
@@ -24,7 +24,7 @@ public class ColliderGesti : MonoBehaviour
         _BoxColliderGesti = GetComponent<BoxCollider>();
         _BoxColliderGesti.enabled = false;
         _IsShowOrNewText = true;
-        _GetTime = -3;
+        _GetTimePreviousMouseDown = -3;
         _PosizioneRulloCentrale = GameObject.Find("PosizioneRulloCentrale");
         if (_PosizioneRulloCentrale == null) { Debug.LogWarning("PosizioneRulloCentrale "+ TagTemplate.NotFindObject); return; }
 
@@ -36,7 +36,7 @@ public class ColliderGesti : MonoBehaviour
     #endregion
     public void OnMouseDown()
     {
-        if (Time.time - _GetTime>=3)
+        if (Time.time - _GetTimePreviousMouseDown>=3)
         {
             if (_IsShowOrNewText)
             {
@@ -47,7 +47,7 @@ public class ColliderGesti : MonoBehaviour
                 StartCoroutine(CreateNewText());
             }
             _IsShowOrNewText = !_IsShowOrNewText;
-            _GetTime = Time.time;
+            _GetTimePreviousMouseDown = Time.time;
         }
     }
 
@@ -75,9 +75,9 @@ public class ColliderGesti : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SoundPaperRoll.Instance.PlaySound();
         yield return new WaitForSeconds(1f);
-        FoglioDietroMove.Instance.LoadComponent();
-        FoglioDavantiMove.Instance.LoadComponent();
-        Rollo.Instance.LoadComponent();
+        FoglioDietroMove.Instance.LoadStart(); // khởi tạo lại giá trị
+        FoglioDavantiMove.Instance.LoadStart();
+        Rollo.Instance.LoadStart();
         StartGame.Instance.GameObjectMoveXY(_PosizioneRulloIniziale.transform.position, 0.5f);
         yield return new WaitForSeconds(0.5f);
         StartGame.Instance.IsPlayGame = true;
