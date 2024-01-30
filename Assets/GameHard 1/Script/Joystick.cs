@@ -10,25 +10,19 @@ public class Joystick : MonoBehaviour
     private Vector3 _PosCurrMouse;
     public float RotationSpeed = 5.0f;
 
-    #region phần khởi tạo
     private void Reset()
     {
-        LoadComponent();
+        _SoundManage = FindObjectOfType<SoundManage>();
+        _JoystickCentro = GameObject.Find("JoystickCentro");
+        if (!_JoystickCentro) { Debug.LogWarning("JoystickCentro không tìm thấy"); return; }
+        _JoystickWrapper = GameObject.Find("JoystickWrapper");
+        if (!_JoystickWrapper) { Debug.LogWarning("JoystickWrapper không tìm thấy"); return; }
     }
 
     private void Start()
     {
-    }
-    private void LoadComponent()
-    {
-        _SoundManage = FindObjectOfType<SoundManage>();
-        _JoystickCentro = GameObject.Find("JoystickCentro");
-        if(!_JoystickCentro) { Debug.LogWarning("JoystickCentro không tìm thấy"); return; }
-        _JoystickWrapper = GameObject.Find("JoystickWrapper");
-        if (!_JoystickWrapper) { Debug.LogWarning("JoystickWrapper không tìm thấy"); return; }
         _IsPlaySound = true;
     }
-    #endregion
     private void OnMouseDown()
     {
         CubeRotation.Instance.IsCubeRotation = false;
@@ -49,16 +43,11 @@ public class Joystick : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            // Lấy hướng từ đối tượng đến vị trí chuột
             Vector3 targetDirection = hit.point - transform.position;
             if (mousePosition == _PosCurrMouse)
-            {
                 _SoundManage.m_AudioSource.volume = 0;
-            }
             else
-            {
                 _SoundManage.m_AudioSource.volume = 1;
-            }
             if (_IsPlaySound)
             {
                 _SoundManage.PlaySound(_SoundJoystickClip);

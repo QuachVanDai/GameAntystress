@@ -11,26 +11,13 @@ public class PestleContactsBowl : MonoBehaviour
     private float _GetTimeCurrent;
     private Vector3 _FirstPosContactsBowl; 
     public Vector3 FirstPosContactsBowl {  get { return _FirstPosContactsBowl; } set { _FirstPosContactsBowl = value;} }
-    #region Phần khởi tạo 
     private void Reset()
     {
-        LoadComponent();
-    }
-    private void Start()
-    {
-        LoadComponent();
-    }
-    private void LoadComponent()
-    {
         _SingingBowlMazza = GameObject.Find("SingingBowlMazza");
-        if( !_SingingBowlMazza) { Debug.LogWarning("SingingBowlMazza "+TagTemplate.NotFindObject); return; }
+        if (!_SingingBowlMazza) { Debug.LogWarning("SingingBowlMazza " + TagTemplate.NotFindObject); return; }
         _PernoMazza = GameObject.Find("PernoMazza");
-        if (!_PernoMazza) { Debug.LogWarning("PernoMazza"+ TagTemplate.NotFindObject); return; }
-
+        if (!_PernoMazza) { Debug.LogWarning("PernoMazza" + TagTemplate.NotFindObject); return; }
     }
-    #endregion
-
-
     // chạm một lần vào thành bát 
     public void OnMouseDown()
     {
@@ -60,21 +47,19 @@ public class PestleContactsBowl : MonoBehaviour
         {
             _PernoMazza.transform.localRotation = Quaternion.LookRotation(hit.point - transform.position, Vector3.up);
             _PernoMazza.transform.localRotation = Quaternion.Euler(0, _PernoMazza.transform.localRotation.eulerAngles.y, 0);
-            //   StartCoroutine(knockBowl2());
         }
     }
-
-    IEnumerator KnockBowl2()
-    {
-        Quaternion newRotation;
-        newRotation = Quaternion.Euler(-17, 0, 0);
-        _SingingBowlMazza.transform.localRotation = newRotation;
-        yield return new WaitForSeconds(0.05f);
-        newRotation = Quaternion.Euler(-25, 0, 0);
-        _SingingBowlMazza.transform.localRotation = newRotation;
-        yield return new WaitForSeconds(0.05f);
-        newRotation = Quaternion.Euler(-17, 0, 0);
-        _SingingBowlMazza.transform.localRotation = newRotation;
-        yield return null;
-    }
 }
+/*IEnumerator KnockBowl2()
+{
+    Quaternion newRotation;
+    newRotation = Quaternion.Euler(-17, 0, 0);
+    _SingingBowlMazza.transform.localRotation = newRotation;
+    yield return new WaitForSeconds(0.05f);
+    newRotation = Quaternion.Euler(-25, 0, 0);
+    _SingingBowlMazza.transform.localRotation = newRotation;
+    yield return new WaitForSeconds(0.05f);
+    newRotation = Quaternion.Euler(-17, 0, 0);
+    _SingingBowlMazza.transform.localRotation = newRotation;
+    yield return null;
+}*/

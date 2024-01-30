@@ -27,7 +27,7 @@ public class Scritta : MonoBehaviour
     {
         LoadComponent();
     }
-    private void LoadStart()
+    public void LoadStart()
     {
         _TextMesh.text = "";
         _IsCanSetTextMesh = true;
@@ -50,7 +50,6 @@ public class Scritta : MonoBehaviour
         _TextMesh.text += "\n";
     }
 
-//    #region phần get set
     public void SetTextMesh(string s)
     {
        if(_IsCanSetTextMesh)
@@ -91,5 +90,4 @@ public class Scritta : MonoBehaviour
     {
         return this._Tasto;
     }
-  //  #endregion
 }

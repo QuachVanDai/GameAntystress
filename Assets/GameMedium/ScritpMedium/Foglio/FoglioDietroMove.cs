@@ -5,11 +5,10 @@ public class FoglioDietroMove : MonoBehaviour
     private static FoglioDietroMove _Instance;
     public int LineCount = 1;
     public static FoglioDietroMove Instance { get { return _Instance; } }
-    [SerializeField] private GameObject _PosizioneFoglioDietroSu;  // vi tri xuất hiện từ trên 
-    [SerializeField] private GameObject _PosizioneFoglioDietroInserito; // vi tri thay doi khi danh chu
-    [SerializeField] private GameObject _PosizioneFoglioDietroNascosto; // vi tri an sau khi
+    [SerializeField] private GameObject _PosizioneFoglioDietroSu;  
+    [SerializeField] private GameObject _PosizioneFoglioDietroInserito;
+    [SerializeField] private GameObject _PosizioneFoglioDietroNascosto;
 
-    #region phần khỏi tạo
     private void Awake()
     {
         if (_Instance != null) { Debug.LogWarning(TagTemplate.OnlyOneExistsObject + "FoglioDietroMove "); return; }
@@ -38,12 +37,9 @@ public class FoglioDietroMove : MonoBehaviour
         _PosizioneFoglioDietroNascosto = GameObject.Find("PosizioneFoglioDietroNascosto");
         if (_PosizioneFoglioDietroNascosto == null) { Debug.LogWarning("PosizioneFoglioDietroNascosto " + TagTemplate.NotFindObject); return; }
     }
-    #endregion
     public  void FoglioMove()
     {
-  
         this.transform.DOMoveY(_PosizioneFoglioDietroInserito.transform.position.y - (0.222f * this.LineCount++), 0.5f);
-
     }
     public  void FoglioShow()
     {

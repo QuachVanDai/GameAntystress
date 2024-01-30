@@ -11,21 +11,15 @@ public class Girello : MonoBehaviour
     public float RotationSpeed = 5.0f;
     private Vector3 _PosCurrMouse;
 
-    #region phần khởi tạo
-    private void Reset()
-    {
-        LoadComponent();
-    }
     private void Start()
     {
+        _IsPlaySound = true;
     }
-    private void LoadComponent()
+    private void Reset()
     {
         _Girello = GameObject.Find("Girello");
         _SoundManage = FindObjectOfType<SoundManage>();
-        _IsPlaySound = true;
     }
-    #endregion
     private void OnMouseDown()
     {
         CubeRotation.Instance.IsCubeRotation = false;
@@ -44,27 +38,23 @@ public class Girello : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+        if (!Physics.Raycast(ray, out hit)) return;
+
+        Vector3 targetDirection = hit.point - transform.position;
+        if (mousePosition == _PosCurrMouse)
+            _SoundManage.m_AudioSource.volume=0;
+        else
+            _SoundManage.m_AudioSource.volume = 1;
+
+        if (_IsPlaySound)
         {
-            Vector3 targetDirection = hit.point - transform.position;
-            if (mousePosition == _PosCurrMouse)
-            {
-                _SoundManage.m_AudioSource.volume=0;
-            }
-            else
-            {
-                _SoundManage.m_AudioSource.volume = 1;
-            }
-            if (_IsPlaySound)
-            {
-                _SoundManage.PlaySound(_SoundGirelloClip);
-                 _IsPlaySound=false;
-            }
-            // Chuyển đổi hướng thành góc quay và áp dụng quay cho hình tròn
-            float targetRotation = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
-            Quaternion newRotation = Quaternion.Euler(0, 0, targetRotation -90 - Mathf.Abs(_RootFidget.transform.rotation.eulerAngles.z));
-            _Girello.transform.localRotation = Quaternion.Slerp(_Girello.transform.localRotation, newRotation, RotationSpeed * Time.deltaTime);
+            _SoundManage.PlaySound(_SoundGirelloClip);
+            _IsPlaySound = false;
         }
-        _PosCurrMouse = mousePosition;
+        // Chuyển đổi hướng thành góc quay và áp dụng quay cho hình tròn
+        float targetRotation = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+        Quaternion newRotation = Quaternion.Euler(0, 0, targetRotation -90 - Mathf.Abs(_RootFidget.transform.rotation.eulerAngles.z));
+        _Girello.transform.localRotation = Quaternion.Slerp(_Girello.transform.localRotation, newRotation, RotationSpeed * Time.deltaTime);
+            _PosCurrMouse = mousePosition;
     }
 }

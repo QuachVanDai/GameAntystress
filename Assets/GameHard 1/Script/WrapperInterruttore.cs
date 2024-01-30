@@ -14,21 +14,11 @@ public class WrapperInterruttore : MonoBehaviour
 
     private float _GetWaitTime;
 
-    #region phàn khởi tạo
     private void Reset()
-    {
-        LoadComponent();
-    }
-
-    private void Start()
-    {
-    }
-    private void LoadComponent()
     {
         _SoundManage = FindObjectOfType<SoundManage>();
         _WrapperInterruttore = GameObject.Find("WrapperInterruttore");
     }
-    #endregion
     private void OnMouseDown()
     {
         CubeRotation.Instance.IsCubeRotation = false;
@@ -37,15 +27,13 @@ public class WrapperInterruttore : MonoBehaviour
     private void OnMouseUp()
     {
         CubeRotation.Instance.IsCubeRotation = true;
-        if (Time.time - _GetWaitTime > 0.5f)
-        {
-            return;
-        }
+        if (Time.time - _GetWaitTime > 0.4f)  return;
+
         _WrapperInterruttore.transform.DOLocalRotate(new Vector3(0,0, _Angle),0.1f).SetEase(Ease.OutBack).OnComplete(()=>
         {
             _SoundManage.PlaySound(_SoundWrapperInterruttoreClip);
 
-            _WrapperInterruttore.transform.DOLocalRotate(new Vector3(0, 0, _Angle- _Coefficient), 0.05f).OnComplete(() =>
+            _WrapperInterruttore.transform.DOLocalRotate(new Vector3(0, 0, _Angle - _Coefficient), 0.05f).OnComplete(() =>
             {
                 _WrapperInterruttore.transform.DOLocalRotate(new Vector3(0, 0, _Angle ), 0.05f).OnComplete(() =>
                 {

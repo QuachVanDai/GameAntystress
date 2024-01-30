@@ -4,35 +4,24 @@ public class TastiControll : MonoBehaviour
 {
 
     [SerializeField] private Tasto _Tasto;
-    [SerializeField] private float _Distance;
-
-    private void Reset()
-    {
-    }
-    void Start()
-    {
-    }
+    private float _GetWaitTime=0;
     public void Update()
     {
-        if (!StartGame.Instance.IsPlayGame) return;
+        if (!StartGame.Instance.IsPlayGame || Time.time - _GetWaitTime < 0.08f) return;
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
-            if (Physics.Raycast(ray, out hit))
+            _Tasto = null;
+            if (!Physics.Raycast(ray, out hit)) return;
+
+            if (hit.collider.tag == "Tasto")
             {
-                if (hit.collider.tag == "Tasto")
-                {
-                    _Tasto = hit.collider.GetComponent<Tasto>();
-                    if(Vector3.Distance(hit.collider.transform.position, _Tasto.PosEndTasto) !=_Distance)
-                    {
-                        _Tasto.OnMouseDown();
-                        _Distance = Vector3.Distance(hit.collider.transform.position, _Tasto.PosEndTasto);
-                    }
-                }
+                _Tasto = hit.collider.GetComponent<Tasto>();
+                _Tasto.OnMouseDown();
+                _GetWaitTime = Time.time;
             }
-            else { _Tasto = null; _Distance = 0; }
         }
 
     }

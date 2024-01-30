@@ -6,10 +6,10 @@ public class FoglioDavantiMove : MonoBehaviour
     private static FoglioDavantiMove _instance;
     [SerializeField] private GameObject _Scritta;
     public static FoglioDavantiMove Instance { get { return _instance; } }
-    [SerializeField] private GameObject _PosizioneFoglioDavantiSu;  // vi tri xuất hiện từ trên 
-    [SerializeField] private GameObject _PosizioneFoglioDavantiInserito; // vi tri thay doi khi danh chu
-    [SerializeField] private GameObject _PosizioneFoglioDavantiNascosto; // vi tri an sau khi
-    [SerializeField] private Vector3 _PosizioneFoglioDavantiShow; // vi tri an sau khi
+    [SerializeField] private GameObject _PosizioneFoglioDavantiSu;  
+    [SerializeField] private GameObject _PosizioneFoglioDavantiInserito;
+    [SerializeField] private GameObject _PosizioneFoglioDavantiNascosto; 
+    [SerializeField] private Vector3 _PosizioneFoglioDavantiShow;
 
     public int LineCount = 1;
 

@@ -8,26 +8,20 @@ public class Sfera : MonoBehaviour
     [SerializeField] private SoundManage _SoundManage;
     [SerializeField] private AudioClip _SoundBreatheClip;
     [SerializeField] private bool _IsPlaySound;
-    [SerializeField] private float _RotationSpeed;
+    [SerializeField] private GameObject _Sfrea;
 
-    public GameObject _Sfrea;
+    private const float _RotationSpeed=4.5f;
     private Vector3 _PosCurrMouse;
     private Vector3 _MouseDelta;
     private Vector3 _PreMousePos;
-    #region phần khởi tạo
     private void Reset()
     {
-        LoadComponent();
+        _SoundManage = FindObjectOfType<SoundManage>();
     }
     private void Start()
     {
-    }
-    private void LoadComponent()
-    {
         _IsPlaySound = true;
-        _SoundManage = FindObjectOfType<SoundManage>();
     }
-    #endregion
     private void OnMouseDown()
     {
         CubeRotation.Instance.IsCubeRotation = false;
@@ -35,7 +29,6 @@ public class Sfera : MonoBehaviour
     private void OnMouseUp()
     {
         CubeRotation.Instance.IsCubeRotation = true;
-
     }
     private void OnMouseDrag()
     {
@@ -44,13 +37,9 @@ public class Sfera : MonoBehaviour
         _Sfrea.transform.localRotation = Quaternion.Euler(_MouseDelta.y, -_MouseDelta.x, 0) * _Sfrea.transform.localRotation;
         _PreMousePos = Input.mousePosition;
         if (Input.mousePosition == _PosCurrMouse)
-        {
             _SoundManage.m_AudioSource.volume = 0;
-        }
         else
-        {
             _SoundManage.m_AudioSource.volume = 1;
-        }
 
         if (_IsPlaySound == true)
         {

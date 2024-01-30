@@ -9,15 +9,13 @@ public class CubeRotation : MonoBehaviour
     private Vector3 _preMousePos;
     private bool _IsCubeRotation;
     [SerializeField] private float _RotationSpeed;
-
-
     public bool IsCubeRotation { get { return _IsCubeRotation; } set {  _IsCubeRotation = value; } }
     private void Awake()
     {
         if (_instance != null) { Debug.LogWarning("Chi ton tai 1 CubeRotation "); return; }
         CubeRotation._instance = this;
     }
-    private void Reset()
+    private void Start()
     {
         _IsCubeRotation = true;
     }

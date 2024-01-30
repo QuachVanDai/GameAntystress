@@ -9,46 +9,43 @@ public class ColliderGesti : MonoBehaviour
     [SerializeField] private bool _IsShowOrNewText=true;
 
     private float _GetTimePreviousMouseDown;
-    #region phần khơi tạo
     private void Reset()
     {
-        LoadComponent();
+        LoadReset();
+    }
+    private void LoadReset()
+    {
+        _PosizioneRulloCentrale = GameObject.Find("PosizioneRulloCentrale");
+        if (_PosizioneRulloCentrale == null) { Debug.LogWarning("PosizioneRulloCentrale " + TagTemplate.NotFindObject); return; }
+
+        _PosizioneRulloIniziale = GameObject.Find("PosizioneRulloIniziale");
+        if (_PosizioneRulloIniziale == null) { Debug.LogWarning("PosizioneRulloIniziale " + TagTemplate.NotFindObject); return; }
+        _BoxColliderGesti = GetComponent<BoxCollider>();
     }
     private void Start()
     {
-        LoadComponent();
-        Invoke(nameof(SetActiveBoxColliderGesti), 2.5f);
+        LoadStart();
     }
-    private void LoadComponent()
+    private void LoadStart()
     {
-        _BoxColliderGesti = GetComponent<BoxCollider>();
         _BoxColliderGesti.enabled = false;
         _IsShowOrNewText = true;
         _GetTimePreviousMouseDown = -3;
-        _PosizioneRulloCentrale = GameObject.Find("PosizioneRulloCentrale");
-        if (_PosizioneRulloCentrale == null) { Debug.LogWarning("PosizioneRulloCentrale "+ TagTemplate.NotFindObject); return; }
-
-        _PosizioneRulloIniziale = GameObject.Find("PosizioneRulloIniziale");
-        if (_PosizioneRulloIniziale == null) { Debug.LogWarning("PosizioneRulloIniziale "+ TagTemplate.NotFindObject); return; }
         Invoke("CreateFirstNewText", 0.6f);
-     
+        Invoke(nameof(SetActiveBoxColliderGesti), 2.6f);// CreateNewText() => SumWaitTime = 2.6f
+
     }
-    #endregion
     public void OnMouseDown()
     {
-        if (Time.time - _GetTimePreviousMouseDown>=3)
-        {
+        if (Time.time - _GetTimePreviousMouseDown < 3) return;
+
             if (_IsShowOrNewText)
-            {
                 StartCoroutine(PublishingText());
-            }
             else
-            {
                 StartCoroutine(CreateNewText());
-            }
+
             _IsShowOrNewText = !_IsShowOrNewText;
             _GetTimePreviousMouseDown = Time.time;
-        }
     }
 
     public void SetActiveBoxColliderGesti()
@@ -77,7 +74,7 @@ public class ColliderGesti : MonoBehaviour
         yield return new WaitForSeconds(1f);
         FoglioDietroMove.Instance.LoadStart(); // khởi tạo lại giá trị
         FoglioDavantiMove.Instance.LoadStart();
-        Rollo.Instance.LoadStart();
+        Manopola.Instance.LoadStart();
         StartGame.Instance.GameObjectMoveXY(_PosizioneRulloIniziale.transform.position, 0.5f);
         yield return new WaitForSeconds(0.5f);
         StartGame.Instance.IsPlayGame = true;

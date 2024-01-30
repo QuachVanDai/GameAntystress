@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundMoveAroundBowl : MonoBehaviour
@@ -37,7 +36,7 @@ public class SoundMoveAroundBowl : MonoBehaviour
         AudioSource.volume=number;
         while (number >= 0 && number <= 1)
         {
-            AudioSource.volume += 0.1f;
+            AudioSource.volume += 0.05f;
             yield return new WaitForSeconds(0.1f);
             number += 0.1f;
         }
