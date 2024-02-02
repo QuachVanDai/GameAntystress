@@ -11,6 +11,8 @@ public class PestleContactsBowl : MonoBehaviour
     private float _GetTimeCurrent;
     private Vector3 _FirstPosContactsBowl; 
     public Vector3 FirstPosContactsBowl {  get { return _FirstPosContactsBowl; } set { _FirstPosContactsBowl = value;} }
+
+    public GameObject a, b;
     private void Reset()
     {
         _SingingBowlMazza = GameObject.Find("SingingBowlMazza");
@@ -25,6 +27,19 @@ public class PestleContactsBowl : MonoBehaviour
         _GetTimeCurrent = Time.time;  // lấy thời gian game đã chạy được tính bắt đầu bấm nút Play
         SetPositionBowl();  
         KnockBowl_1();
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        // Kiểm tra xem collider của mesh có chạm vào collider khác hay không
+        if (other.CompareTag("ColliderGrande")) // Thay "Player" bằng tag của collider bạn muốn kiểm tra
+        {
+            // Lấy tọa độ của mesh
+            Vector3 meshPosition = transform.position;
+
+            Debug.Log("Tọa độ chạm trên Mesh: " + meshPosition);
+
+            // Thực hiện các hành động khác tùy thuộc vào tọa độ chạm
+        }
     }
     public void OnMouseUp()
     {
@@ -45,6 +60,7 @@ public class PestleContactsBowl : MonoBehaviour
         RaycastHit hit;   // Tạo một RaycastHit để chứa thông tin về va chạm nếu có
         if (Physics.Raycast(ray, out hit))
         {
+            a.transform.position = hit.point;
             _PernoMazza.transform.localRotation = Quaternion.LookRotation(hit.point - transform.position, Vector3.up);
             _PernoMazza.transform.localRotation = Quaternion.Euler(0, _PernoMazza.transform.localRotation.eulerAngles.y, 0);
         }

@@ -8,6 +8,7 @@ TagManager:
   - GameMedium
   - GameHard
   - Tasto
+  - ColliderGrande
   layers:
   - Default
   - TransparentFX

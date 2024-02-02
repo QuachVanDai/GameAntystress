@@ -27,12 +27,22 @@ public class CubeRotation : MonoBehaviour
     }
     private void Rotation()
     {
-        if(Input.GetMouseButton(0))
+
+
+#if UNITY_ANDROID
+        if (Input.touchCount > 0)
         {
-             _mouseDelta = Input.mousePosition - _preMousePos;
-             _mouseDelta *= _RotationSpeed;
-             transform.rotation = Quaternion.Euler(_mouseDelta.y, -_mouseDelta.x, 0) * transform.rotation;
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Moved)
+            {
+                _mouseDelta = touch.deltaPosition;
+                _mouseDelta *= _RotationSpeed;
+                transform.rotation = Quaternion.Euler(_mouseDelta.y, -_mouseDelta.x, 0) * transform.rotation;
+            }
         }
-        _preMousePos = Input.mousePosition;
+
+#endif
+
+
     }
 }
